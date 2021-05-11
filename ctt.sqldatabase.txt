@@ -1,0 +1,27 @@
+CREATE TABLE kontak (
+    id_siswa int(4) AUTO_INCREMENT PRIMARY KEY,
+    nama varchar(255),
+    kelas varchar(100),
+    alamat varchar(255)
+    );
+    
+INSERT INTO `tb_siswa`(`id_siswa`, `nama`, `kelas`, `alamat`) VALUES 
+('1','Budi Susanto','1MM3','Sedati Gede'),
+('2','Dita Anggraini','1MM2','rungkut'),
+('3','Riska Nur Aini','3MM3','wonocolo');
+
+id_lainnya
+id_pribadi
+id_tempattinggal
+id_peserta
+reportdataexcel_pendaftaran.php
+
+$save=mysqli_query($con, "INSERT INTO peserta_didik (id,jenispendaf, tglmasuk, nis, nopeserta, paud, tk, noskhun, noijasah, hobi, citacita)
+
+$save1=mysqli_query($con, "INSERT INTO data_pribadi (id, nama, jeniskelamin, nisn, nik, tempallahir, tgllahir, agama, kelainan)
+$save2=mysqli_query($con, "INSERT INTO data_tempattinggal (id, jalan, rt, rw, dusun, desa, kecamatan, kodpos, tempattinggal, transportasi)
+$save3=mysqli_query($con, "INSERT INTO data_lainnya (id, hp, telp, email, kps_pkh_kip, no_kps_kks_kip, warga_negara)
+
+SELECT peserta_didik.jenispendaf, peserta_didik.tglmasuk, peserta_didik.nis, peserta_didik.nopeserta, peserta_didik.paud, 
+data_pribadi.nama, data_pribadi.jeniskelamin, data_pribadi.nisn, data_pribadi.nik, data_pribadi.tempallahir,data_pribadi.tgllahir, data_pribadi.agama, data_pribadi.kelainan, data_tempattinggal.jalan, data_tempattinggal.rt, data_tempattinggal.rw, data_tempattinggal.dusun, data_tempattinggal.desa, data_tempattinggal.kecamatan, data_tempattinggal.kodpos, data_tempattinggal.tempattinggal, data_tempattinggal.transportasi, data_lainnya.hp, data_lainnya.telp, data_lainnya.email, data_lainnya.kps_pkh_kip, data_lainnya.no_kps_kks_kip, data_lainnya.warga_negara FROM peserta_didik JOIN data_pribadi ON peserta_didik.id_pribadi= data_pribadi.id_pribadi JOIN data_tempattinggal ON peserta_didik.id_tempattinggal= data_tempattinggal.id_tempattinggal JOIN data_lainnya ON peserta_didik.id_lainnya= data_lainnya.id_lainnya
+https://www.warungbelajar.com/cara-membuat-report-excel-di-php-menggunakan-phpspreadsheet.html
